@@ -17,8 +17,8 @@
 
         <ul class="nav navbar-nav navbar-right">
           {{#if currentUser}}
-            <li><a href="#">Add Stuff</a></li>
-            <li><a href="#">List Stuff</a></li>
+            <li><a href="{{pathFor 'AddContact'}}">Add Contact</a></li>
+            <li><a href="{{ pathFor 'ListContact'}}">List Contact</a></li>
           {{/if}}
           <li><a href="#" class="navbar-link">{{> loginButtons }}</a></li>
 

@@ -7,6 +7,10 @@ body {
 
 }
 
+legend{
+  color: #269abc;
+}
+
 .navbar{
   border-radius: 0px;
   background-color:#384F93;
