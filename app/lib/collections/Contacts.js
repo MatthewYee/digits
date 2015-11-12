@@ -12,6 +12,16 @@ Meteor.methods({
     Contact.insert(doc);
   },
   /**
+   * INvoked by autoform to delete new stuff record
+   * added by matthew yee
+   */
+  deleteContact: function(doc, docID){ // added
+    check(doc, Contact.simpleSchema());
+    Contact.remove(docID);
+    //Contact.update({_id: docID}, doc});
+  },
+
+  /**
    *
    * Invoked by AutoForm to update a Stuff record.
    * @param doc The Stuff document.

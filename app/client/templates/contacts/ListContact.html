@@ -11,6 +11,7 @@
           <th>Phone</th>
           <th>Email</th>
           <th>Edit</th>
+          <th>Delete</th>
         </tr>
         </thead>
 
@@ -23,6 +24,7 @@
             <th>{{phone}}</th>
             <th>{{email}}</th>
             <td><a href="{{pathFor 'EditContact'}}">Edit</a></td>
+            <td><a href="{{pathFor 'DeleteContact'}}">Delete</a></td>
           </tr>
         {{/each}}
         </tbody>
